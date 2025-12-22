@@ -77,6 +77,11 @@ body {
     cursor: pointer;
 }
 
+#search-btn-ico{
+    width: 25px;
+    height: 20px;
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -404,7 +409,6 @@ a{
 .lang {
     display: inline-flex;
     align-items: center;
-    gap: 12px
 }
 
 .logo {
