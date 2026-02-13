@@ -443,6 +443,10 @@ select {
         display: none;
     }
 
+    .lang {
+        display: none;
+    }
+
     .nav-center {
         width: 100%;
     }
