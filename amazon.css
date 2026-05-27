@@ -106,7 +106,6 @@ img {
     width: 40px;
 }
 
-/* SUB NAV */
 .sub-navbar {
     background: #232f3e;
     color: white;
@@ -146,43 +145,38 @@ img {
     height: 40px;
 }
 
-/* HERO */
 .hero-section {
-    background: #E3E6E6; /* Matches the body background */
+    background: #E3E6E6; 
     position: relative;
     width: 100%;
     overflow: hidden;
-    /* Fixed height removed so images can scale naturally */
 }
 
-/* track (moves left-right) */
 .carousel-track {
     display: flex;
     transition: transform 0.6s ease-in-out;
 }
 
-/* each slide */
 .slide {
     min-width: 100%;
 }
 
 .slide img {
     width: 100%;
-    height: auto; /* Lets the image show its natural height */
-    object-position: top; /* Keeps the top part of the image visible */
+    height: auto; 
+    object-position: top; 
 }
 
-/* gradient overlay (Amazon style fade) */
+
 .hero-section::after {
     content: "";
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40%; /* Creates a soft fade behind the overlapping cards */
+    height: 40%; 
     background: linear-gradient(to bottom, transparent, #E3E6E6);
 }
 
-/* arrows */
 .arrow {
     position: absolute;
     top: 50%;
@@ -207,17 +201,14 @@ img {
     background: white;
 }
 
-/* MAIN */
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    
-    /* OVERLAP EFFECT CSS */
-    position: relative; /* Required to use z-index */
-    z-index: 10;        /* Brings the cards visually above the banner */
-    margin-top: -12vw;  /* Pulls the cards up over the banner (scales with screen size) */
+    position: relative; 
+    z-index: 10;      
+    margin-top: -12vw;  
     padding: 0 20px;
 }
 
@@ -334,7 +325,6 @@ img {
     font-weight: bold;
 }
 
-/* Add to Cart Button Styling */
 .add-to-cart-btn {
     background: #ffd814;
     border: 1px solid #fcd200;
@@ -349,20 +339,18 @@ img {
     background: #f7ca00;
 }
 
-/* --- ADD TO CART SUCCESS STATE --- */
 .add-to-cart-btn.added {
-    background: #28a745 !important; /* Success Green */
+    background: #28a745 !important; 
     border: 1px solid #218838 !important;
     color: white !important;
     box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
     transition: all 0.3s ease;
 }
 
-/* --- CART SIDEBAR --- */
 .cart-sidebar {
     position: fixed;
     top: 0;
-    right: -400px; /* Hidden off-screen */
+    right: -400px; 
     width: 350px;
     height: 100vh;
     background: white;
@@ -397,7 +385,6 @@ img {
     font-weight: 300;
 }
 
-/* Cart Items Area */
 .cart-items {
     flex: 1;
     overflow-y: auto;
@@ -426,34 +413,32 @@ img {
     gap: 15px;
 }
 
-/* --- NEW: CART OVERLAY --- */
 .cart-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8); /* Dims the background */
-    z-index: 999; /* Sits right behind the cart (which is 1000) */
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 999; 
     opacity: 0;
-    pointer-events: none; /* Allows clicking through when hidden */
+    pointer-events: none; 
     transition: opacity 0.3s ease;
 }
 
 .cart-overlay.active {
     opacity: 1;
-    pointer-events: all; /* Blocks clicks to the main page */
+    pointer-events: all; 
 }
 
-/* --- UPDATE: CART SIDEBAR WIDTH --- */
 .cart-sidebar {
     position: fixed;
     top: 0;
-    right: -450px; /* UPDATE: Match this to the new width so it hides fully! */
-    width: 450px;  /* UPDATE: Increased from 350px */
+    right: -450px; 
+    width: 450px;  
     height: 100vh;
     background: white;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.5); /* Made shadow slightly darker to match dim */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5); 
     transition: right 0.3s ease;
     z-index: 1000;
     display: flex;
@@ -464,20 +449,17 @@ img {
     right: 0;
 }
 
-
-
-/* --- UPDATE: CLOSE BUTTON HOVER EFFECT --- */
 #close-cart {
     font-size: 28px;
     cursor: pointer;
     font-weight: 300;
-    display: inline-block; /* Required for the rotation to work */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+    display: inline-block; 
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 
 #close-cart:hover {
-    transform: rotate(90deg); /* Rotates the X */
-    color: #FF9900; /* Optional: Turns Amazon Orange on hover! */
+    transform: rotate(90deg); 
+    color: #FF9900; 
 }
 
 .qty-btn {
@@ -514,7 +496,6 @@ img {
     color: #c45500;
 }
 
-/* Cart Footer */
 .cart-footer {
     padding: 20px;
     border-top: 1px solid #ddd;
@@ -551,7 +532,6 @@ img {
     padding-bottom: 10px;
 }
 
-/* --- CART COUNTER BADGE --- */
 .cart-wrapper {
     position: relative;
     display: flex;
@@ -561,9 +541,9 @@ img {
 .cart-badge {
     position: absolute;
     top: 2px;
-    left: 15px; /* Adjust this left/right if your cart.png is wider */
-    background-color: #f08804; /* Amazon Orange */
-    color: #131921; /* Dark text for contrast */
+    left: 15px; 
+    background-color: #f08804; 
+    color: #131921;
     font-size: 14px;
     font-weight: bold;
     min-width: 20px;
@@ -618,7 +598,7 @@ img {
     margin-top: 10px;
 }
 
-/* --- SIDE MENU OVERLAY --- */
+
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -637,11 +617,11 @@ img {
     pointer-events: all;
 }
 
-/* --- SIDE NAVIGATION MENU --- */
+
 .side-menu {
     position: fixed;
     top: 0;
-    left: -400px; /* Hidden off the LEFT side */
+    left: -400px; 
     width: 365px;
     height: 100vh;
     background: white;
@@ -653,7 +633,7 @@ img {
 }
 
 .side-menu.active {
-    left: 0; /* Slides in from the left */
+    left: 0; 
 }
 
 /* Header (Hello, Sign in) */
@@ -713,7 +693,7 @@ img {
 }
 
 .side-menu-content li a:hover {
-    background-color: #eaeded; /* Amazon's light gray hover color */
+    background-color: #eaeded; 
 }
 
 .menu-divider {
@@ -820,7 +800,7 @@ img {
     }
 
     .hero-section img {
-        height: auto; /* Ensures responsiveness */
+        height: auto; 
     }
 }
 
@@ -856,11 +836,11 @@ img {
     }
 
     .hero-section img {
-        height: auto; /* Ensures responsiveness */
+        height: auto; 
     }
     
     .main-content {
-        margin-top: -20vw; /* Slightly more aggressive pull-up on mobile to look right */
+        margin-top: -20vw; 
     }
 }
 
